@@ -1,9 +1,10 @@
 <h1>
-
+  orders application
 </h1>
 <div>
   <ul>
-    <li class="list-group-item" *ngFor="let order of orders"> {{order}}
+    <li class="list-group-item" *ngFor="let order of getOrders()"> {{order}}
     </li>
   </ul>
 </div>
+<input type="text" class="form-control" (keyup.enter)="onInput($event)">

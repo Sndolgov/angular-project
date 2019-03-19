@@ -1,5 +1,5 @@
-export interface OrdersService {
-  addOrder(order): boolean;
+export abstract class OrdersService {
+  abstract addOrder(order): boolean;
 
-  getOrders(): any;
+  abstract getOrders(): any;
 }

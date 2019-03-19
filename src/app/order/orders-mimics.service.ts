@@ -4,11 +4,8 @@ import {OrdersService} from './orders_service';
 @Injectable({
   providedIn: 'root'
 })
-export class OrdersServiceMimics implements OrdersService {
+export class OrdersServiceMimics extends OrdersService {
   orders: string[] = ['espresso', 'coffee black', 'hafux'];
-
-  constructor() {
-  }
 
   addOrder(order): boolean {
     this.orders.push(order);

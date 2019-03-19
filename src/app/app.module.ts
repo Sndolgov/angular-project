@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { OrdersListComponent } from './order/orders-list/orders-list.component';
 import {OrdersService} from './order/orders_service';
-import {OrdersServiceMimics} from './order/orders.service';
+import {OrdersServiceMimics} from './order/orders-mimics.service';
 
 @NgModule({
   declarations: [
