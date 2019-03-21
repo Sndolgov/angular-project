@@ -1,4 +1,11 @@
-<input type="text"  style="width: 100%" [(ngModel)]="text">
-<p [class.material-icons]="isIcon" style="color: red">
+<input type="text" style="width: 100%" [(ngModel)]="text">
+<!--<p [class.material-icons]="isIcon" style="color: red">
   {{text}}
+</p>-->
+<!--<p class="material-icons" style="color: red" (click)="onClick()">
+  {{text}}
+</p>-->
+
+<p (click)="onClick()">
+  {{text|textRedactor}}
 </p>

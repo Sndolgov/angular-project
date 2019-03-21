@@ -10,6 +10,7 @@ import { LoremImageComponent } from './lorem/lorem-image/lorem-image.component';
 import {FormsModule} from '@angular/forms';
 import { SyncInputComponent } from './sync-input/sync-input.component';
 import { SummaryPipe } from './summary.pipe';
+import { TextRedactorPipe } from './text-redactor.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SummaryPipe } from './summary.pipe';
     OrdersFormComponent,
     LoremImageComponent,
     SyncInputComponent,
-    SummaryPipe
+    SummaryPipe,
+    TextRedactorPipe
   ],
   imports: [
     BrowserModule,
