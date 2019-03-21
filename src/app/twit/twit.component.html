@@ -1,12 +1,4 @@
-<!--<html style="margin: 30px">
-<title>{{twit.title}}</title>
-<body>
-<h1>{{twit.body}}</h1>
-<app-like-setter [likes]="likes" (change)="changeLikes($event)"></app-like-setter>
-<p>{{likes}}</p>
-</body>
-</html>-->
-<div class="card">
+<!--<div class="card">
   <h1 class="card-header">
     {{twit.title}}
   </h1>
@@ -15,4 +7,15 @@
     <app-like-setter [likes]="likes" (change)="changeLikes($event)"></app-like-setter>
     <p>{{twit.likesCount}}</p>
   </div>
-</div>
+</div>-->
+
+<app-header-body>
+  <div class="header">
+    {{twit.title}}
+  </div>
+  <div class="body">
+    <p>{{twit.body}}</p>
+    <app-like-setter [likes]="likes" (change)="changeLikes($event)"></app-like-setter>
+    <p>{{twit.likesCount}}</p>
+  </div>
+</app-header-body>
