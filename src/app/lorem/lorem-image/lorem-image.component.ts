@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import index from '@angular/cli/lib/cli';
 
 @Component({
   selector: 'app-lorem-image',
@@ -7,20 +8,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoremImageComponent {
 
+  @Input('image-width')
   private width = 500;
+  @Input('image-height')
   private height = 500;
-  private toggle = false;
+  @Output()
+  change = new EventEmitter();
+  @Input()
   private category = '';
 
-  private image = `http://lorempixel.com/${this.width}/${this.height}/${this.category}`;
+  private categories = ['abstract', 'people', 'sports', 'animals', 'technics', 'nightlife', 'cats'];
+
+  index = 0;
+
+  private image = `http://lorempixel.com/`;
+
   onClick() {
-    if (this.toggle) {
-      this.image += ' ';
-    } else {
-      this.image = this.image.trim();
+    this.index++;
+    if (this.index === this.categories.length) {
+      this.index = 0;
     }
-    this.toggle = !this.toggle;
+    this.category = this.categories[this.index];
+    this.change.emit(this.category);
   }
+
   get urlImage() {
     return this.image;
   }

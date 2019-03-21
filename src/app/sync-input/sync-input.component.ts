@@ -12,17 +12,4 @@ export class SyncInputComponent {
 
   constructor() {
   }
-
-  // text = 'favorite_border';
-
-  onClick() {
-    if (this.text === 'favorite') {
-      this.text = 'favorite_border';
-    } else {
-      this.text = 'favorite';
-    }
-
-  }
-
-
 }

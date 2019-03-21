@@ -14,7 +14,18 @@ export class AppComponent {
   //
   // }
   text = 'kuku';
+  count = 10;
+  category = 'sports';
+
   onClick() {
     alert(this.text);
+  }
+
+  countIncr() {
+    this.count++;
+  }
+
+  onChange(category) {
+    this.category = category;
   }
 }
