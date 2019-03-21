@@ -1,0 +1,20 @@
+<div [hidden]="getOrders().length>0">
+  <h1>No orders</h1>
+</div>
+<div [hidden]="getOrders().length==0">
+  <h1>List orders</h1>
+</div>
+
+
+<div>
+  <ul class="list-group">
+    <li class=list-group-item *ngFor="let order of getOrders(); index as i; even as even"
+        [class.even]="even">
+
+      {{order}}
+      <button class="btn btn-danger"  (click)="remove(i)">remove</button>
+    </li>
+  </ul>
+</div>
+
+

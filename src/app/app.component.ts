@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-project';
+  // title = 'angular-project';
+  // urlImage = 'http://lorempixel.com/500/500';
+  // isActive = false;
+  // tuggleActive() {
+  //   this.isActive = !this.isActive;
+  //
+  // }
+  text = 'kuku';
+  onClick() {
+    alert(this.text);
+  }
 }
