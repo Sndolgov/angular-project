@@ -15,6 +15,8 @@ import {LikeSetterComponent} from './like-setter/like-setter.component';
 import { TweetComponent } from './twit/twit.component';
 import { HeaderBodyComponent } from './header-body/header-body.component';
 import { OrderPrintComponent } from './orders/order-print/order-print.component';
+import { NavViewComponent } from './nav-view/nav-view.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { OrderPrintComponent } from './orders/order-print/order-print.component'
     LikeSetterComponent,
     TweetComponent,
     HeaderBodyComponent,
-    OrderPrintComponent
+    OrderPrintComponent,
+    NavViewComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

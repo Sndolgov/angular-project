@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<h1>Orders application</h1>
+<!--<h1>Orders application</h1>
 <div class="container">
   <div class="card">
     <div class="card-body">
@@ -9,7 +9,7 @@
       <app-orders-form></app-orders-form>
     </div>
   </div>
-</div>
+</div>-->
 <!--<img [src]="url_image" alt=""><br>-->
 <!--<button class="btn " [class.active]="isActive" (click)="tuggleActive()" >B U T T O N</button>-->
 <!--<app-lorem-image></app-lorem-image>-->
@@ -23,3 +23,10 @@
 <p>{{category|uppercase}}</p>-->
 
 <!--<app-tweet [likes]="40"></app-tweet>-->
+
+<app-nav-view tab1Name="Add Order" tab2Name="Pending orders" tab3Name="Login" tab4Name="Sign_Up">
+  <ng-container class="c1">Any c1 content</ng-container>
+  <ng-container class="c2">Any c2 content</ng-container>
+  <ng-container class="c3"><app-login></app-login></ng-container>
+  <ng-container class="c4">Any c4 content</ng-container>
+</app-nav-view>

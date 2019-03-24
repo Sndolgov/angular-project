@@ -13,9 +13,9 @@
   <div class="header">
     {{twit.title}}
   </div>
-  <div class="body">
+  <ng-container class="body">
     <p>{{twit.body}}</p>
     <app-like-setter [likes]="likes" (change)="changeLikes($event)"></app-like-setter>
     <p>{{twit.likesCount}}</p>
-  </div>
+  </ng-container>
 </app-header-body>

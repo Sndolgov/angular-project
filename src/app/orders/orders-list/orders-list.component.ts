@@ -7,7 +7,7 @@ import {OrdersService} from '../orders-service';
   styleUrls: ['./orders-list.component.css']
 })
 export class OrdersListComponent  {
-private service: OrdersService
+private service: OrdersService;
   constructor(service: OrdersService) {
     this.service = service;
   }
