@@ -10,9 +10,13 @@
   <ul class="list-group">
     <li class=list-group-item *ngFor="let order of getOrders(); index as i; even as even"
         [class.even]="even">
+      <label></label>
+      <input type="checkbox" (click)="remove(i)">
+      <app-order-print [order]="order"></app-order-print>
 
-      {{order}}
-      <button class="btn btn-danger"  (click)="remove(i)">remove</button>
+
+      <!--{{order}}
+      <button class="btn btn-danger"  (click)="remove(i)">remove</button>-->
     </li>
   </ul>
 </div>

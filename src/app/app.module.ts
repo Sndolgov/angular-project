@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {OrdersListComponent} from './orders/orders-list/orders-list.component';
-import {OrdersService} from './orders/ordersservice';
+import {OrdersService} from './orders/orders-service';
 import {OrdersServiceMimics} from './orders/orders-mimics.service';
 import {OrdersFormComponent} from './orders/orders-form/orders-form.component';
 import {LoremImageComponent} from './lorem/lorem-image/lorem-image.component';
@@ -14,6 +14,7 @@ import {TextRedactorPipe} from './text-redactor.pipe';
 import {LikeSetterComponent} from './like-setter/like-setter.component';
 import { TweetComponent } from './twit/twit.component';
 import { HeaderBodyComponent } from './header-body/header-body.component';
+import { OrderPrintComponent } from './orders/order-print/order-print.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HeaderBodyComponent } from './header-body/header-body.component';
     TextRedactorPipe,
     LikeSetterComponent,
     TweetComponent,
-    HeaderBodyComponent
+    HeaderBodyComponent,
+    OrderPrintComponent
   ],
   imports: [
     BrowserModule,
